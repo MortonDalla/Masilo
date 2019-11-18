@@ -47,7 +47,7 @@ INSTALLED_APPS = [
 
 try: 
      config['MIDDLEWARE_CLASSES'] = tuple(['whitenoise.middleware.WhiteNoiseMiddleware'] + list(config['MIDDLEWARE_CLASSES'])) 
- except KeyError: 
+except KeyError: 
      config['MIDDLEWARE'] = tuple(['whitenoise.middleware.WhiteNoiseMiddleware'] + list(config['MIDDLEWARE'])) 
 
 
